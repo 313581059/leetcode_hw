@@ -41,7 +41,7 @@ class Solution(object):
             level += 1
 
         return True
-
+```
 * 相似題
     ✅ 102 Binary Tree Level Order Traversal
     少掉prev、level、奇偶數遞增遞減判定
