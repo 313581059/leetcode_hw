@@ -17,7 +17,7 @@ class Solution(object):
             prev = None # 目前值每一層(輪)會更新，最左邊那顆還不用比所以暫定為None
             
             for _ in range(size):      # 一次只處理一層
-                node = queue.popleft() # 取出 queue 最前面的 node
+                node = queue.popleft() # 取出 queue 最前面的 node，一顆一顆取出來檢查，檢查過了就檢查下一顆
                 val = node.val         # 取得 node 的值
                 
                 if level % 2 == 0:
@@ -31,7 +31,7 @@ class Solution(object):
                     if prev != None and val >= prev: # 必須遞減
                         return False
                 
-                prev = val  # 把目前值記錄成下一顆比較的基準
+                prev = val  # 把目前這顆node值記錄成下一顆node比較的基準
                 # BFS 的核心，走到一個 node，把它的 children 加入 queue (queue會帶領走完整棵樹)
                 if node.left:
                     queue.append(node.left)
