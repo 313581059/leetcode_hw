@@ -9,14 +9,14 @@ from collections import deque
 
 class Solution(object):
     def isEvenOddTree(self, root):
-        queue = deque([root])  # BFS的解法
-        level = 0
+        queue = deque([root])  # BFS的解法，BFS得到第一層的節點
+        level = 0              # 奇數偶數層的判定
 
-        while queue:
+        while queue:  # 一層一層來
             size = len(queue)
-            prev = None # 記錄上一個 node 的值
+            prev = None # 目前值每一層(輪)會更新，最左邊那顆還不用比所以暫定為None
             
-            for _ in range(size):
+            for _ in range(size):      # 一次只處理一層
                 node = queue.popleft() # 取出 queue 最前面的 node
                 val = node.val         # 取得 node 的值
                 
@@ -31,8 +31,8 @@ class Solution(object):
                     if prev != None and val >= prev: # 必須遞減
                         return False
                 
-                prev = val  # 把目前值記錄成下一次比較的基準
-                # BFS 的核心，走到一個 node，把它的 children 加入 queue
+                prev = val  # 把目前值記錄成下一顆比較的基準
+                # BFS 的核心，走到一個 node，把它的 children 加入 queue (queue會帶領走完整棵樹)
                 if node.left:
                     queue.append(node.left)
                 if node.right:
