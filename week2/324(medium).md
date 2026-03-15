@@ -18,10 +18,10 @@ class Solution(object):
         nums[::2] = left
         nums[1::2] = right
 ```
-* Divide and Conquer \
-  1. 排序 \
-  2. 把數列分成兩半 \
-  3. 大的放奇數位 \
+#### Divide and Conquer 
+  1. 排序 
+  2. 把數列分成兩半 
+  3. 大的放奇數位 
      小的放偶數位
   
 
