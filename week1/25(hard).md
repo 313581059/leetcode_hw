@@ -47,3 +47,6 @@ class Solution(object):
             cur = nxt       #cur指向下一個點
             count-=1
         return(cur,prev)
+```
+* 相似題 \
+24. 算是k=2的25題 做法可以幾乎一樣
