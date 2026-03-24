@@ -2,7 +2,7 @@
 
 <img width="2859" height="1272" alt="image" src="https://github.com/user-attachments/assets/fc969d7c-485e-47c5-bb61-4efd43b495d1" />
 
-解題思維
+* 解題思維
 這題要求對 binary tree 的每一層做條件檢查，因此我選擇使用 BFS 廣度優先搜尋來做 level order traversal(逐層遍歷)。\
 BFS 可以一層一層處理節點，剛好符合題目需求。\
 size = len(queue) 這行確保我一次只會處理完同一層的所有節點。\
@@ -12,7 +12,7 @@ prev 用來記錄「同一層前一個節點的值」，避免跨層比較。\
 一層處理完 換處理下一層(節點都被保存在更新的queue中)\
 BFS遍歷這棵樹，每個 node 只會被訪問一次，時間複雜度為O(n)。
 
-程式
+* 程式
 
 ```python
 from collections import deque
