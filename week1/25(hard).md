@@ -48,5 +48,5 @@ class Solution(object):
             count-=1
         return(cur,prev)
 ```
-* 相似題 \
+* 相似題 
 24. 算是k=2的25題 做法可以幾乎一樣
