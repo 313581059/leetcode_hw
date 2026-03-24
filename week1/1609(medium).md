@@ -2,7 +2,7 @@
 
 <img width="2859" height="1272" alt="image" src="https://github.com/user-attachments/assets/fc969d7c-485e-47c5-bb61-4efd43b495d1" />
 
-* 解題思維
+* 解題思維 \
 這題要求對 binary tree 的每一層做條件檢查，因此我選擇使用 BFS 廣度優先搜尋來做 level order traversal(逐層遍歷)。\
 BFS 可以一層一層處理節點，剛好符合題目需求。\
 size = len(queue) 這行確保我一次只會處理完同一層的所有節點。\
