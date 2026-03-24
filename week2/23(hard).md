@@ -1,8 +1,9 @@
 ### 23. Merge k Sorted Lists
 
-![Uploading image.png…]()
+<img width="2855" height="1269" alt="image" src="https://github.com/user-attachments/assets/ce2925ae-1661-4b06-b0fe-1a1377ead8c6" />
 
-* 解題思路
+
+* 解題思路\
 假設是L1~L8 設計一個divide函數跟merge sort函數 \
 divide一直切左右兩半 切到只剩下一個list \
 因為這題有排序過的list 所以不用額外判斷 \
