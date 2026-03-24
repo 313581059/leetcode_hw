@@ -1,6 +1,7 @@
 ### 25. Reverse Nodes in k-Group
 
 <img width="2862" height="1265" alt="image" src="https://github.com/user-attachments/assets/659c79d6-0f55-41d1-9f5b-ebe37d39e6c2" />
+
 * 解題思路\
 先設計一個反轉函數reverse \
 輸入是head跟count 回傳是current跟previous \
