@@ -1,8 +1,34 @@
 ### 493. Reverse Pairs
 
 <img width="2858" height="1266" alt="image" src="https://github.com/user-attachments/assets/1b225af2-89d1-4b64-b579-41e2240288e6" />
+* 解題思路\
+這題要計算有幾對i,j滿足i小於j 以及nums[i]大於兩倍nums[j] \
+先舉一個例子2,4,3,5,1 會由merge_sort函數一直從中間切一刀 切成2,4,3、5,1再切2,4、3、5,1 
 
-程式
+主要這題就是設計merge sort函數 \
+如果index left大於等於index right就要return \
+變數middle用來標記 左邊指到middle 右邊從middle+1開始指 \
+遞迴merge sort 函數處理左半部分的nums array \
+遞迴merge sort 函數處理右半部分的nums array
+
+設計一個for loop 主要用來計算有幾對i,j符合題目要的定義 \
+用一個while  loop \
+對於每個左邊的元素nums[i]找到右邊的元素nums[j]是否滿足 大於兩倍 \
+做一次 j+1 ，count儲存j-(mid+1) \
+(這邊可以簡化成累加存到count變數就好嗎)
+
+再用三個while loop處理merge_sort的動作 \
+例如2,4跟3 \
+第一個while會比較2,3跟4,3 得到[2,3]的排序 \
+第二個while檢查整理左邊剩下的4 append到3後面 \
+第三個while檢查整理右邊剩下的 沒有 就不用append \
+
+整理好後更新nums
+
+主程式呼叫這個寫好的mergesort \ 
+從0到尾巴index 透過遞迴可以慢慢合併跟計算count return count
+
+* 程式
 ```python
 class Solution(object):
     def reversePairs(self, nums):
