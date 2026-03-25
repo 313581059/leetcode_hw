@@ -1,7 +1,8 @@
 ### 493. Reverse Pairs
 
 <img width="2858" height="1266" alt="image" src="https://github.com/user-attachments/assets/1b225af2-89d1-4b64-b579-41e2240288e6" />
-* 解題思路\
+* 解題思路
+
 這題要計算有幾對i,j滿足i小於j 以及nums[i]大於兩倍nums[j] \
 先舉一個例子2,4,3,5,1 會由merge_sort函數一直從中間切一刀 切成2,4,3、5,1再切2,4、3、5,1 
 
