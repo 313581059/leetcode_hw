@@ -26,7 +26,7 @@
 
 整理好後更新nums
 
-主程式呼叫這個寫好的mergesort \ 
+主程式呼叫這個寫好的merge_sort 
 從0到尾巴index 透過遞迴可以慢慢合併跟計算count return count
 
 * 程式
