@@ -19,8 +19,8 @@
   定義一個函數： f(n) = 長度 n 的 beautiful array \
   遞迴\
   f(n) = 奇數部分 + 偶數部分 \
-  奇數部分  = f((n+1)//2) 映射成 2*x - 1 \
-  偶數部分  = f(n//2)     映射成 2*x 
+  奇數部分  = f((n+1)//2) 映射成 2x - 1 \
+  偶數部分  = f(n//2)     映射成 2x 
 * 程式
 ```python
 class Solution(object):
