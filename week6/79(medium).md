@@ -7,7 +7,7 @@
   從每個點當起點做 DFS，如果當前字母符合，就往四個方向繼續找下一個字母，\
   定義 dfs(i, j, k)，(i, j)：目前位置，k：目前匹配到 word[k] 
 
-  遞迴邏輯:\
+  遞迴邏輯:
   1. 如果 matrix[i][j] != word[k] → return False
   2. 如果 k == len(word)-1 → return True（全部匹配）
   3. 標記這格為已訪問
