@@ -2,14 +2,14 @@
 
 <img width="2846" height="1273" alt="image" src="https://github.com/user-attachments/assets/5bf5ccd1-2223-4ccb-89ec-6212dadbb8f7" />
 
-* 解題思路
-  核心想法：從「右上角」開始找，如果目前數字 太大 → 往左（變小）；如果目前數字 太小 → 往下（變大），每一步都能排除一整列或一整行，。
+* 解題思路 \
+  核心想法：從「右上角」開始找，如果目前數字 太大 → 往左（變小）；如果目前數字 太小 → 往下（變大），每一步都能排除一整列或一整行。\
 
-  假設從 (row=0, col=n-1) 開始：
-  while 還在矩陣範圍內:
-    if 當前值 == target → 找到
-    if 當前值 > target → col -= 1（往左）
-    if 當前值 < target → row += 1（往下）
+  假設從 (row=0, col=n-1) 開始：\
+  while 還在矩陣範圍內:\
+    if 當前值 == target → 找到\
+    if 當前值 > target → col -= 1（往左）\
+    if 當前值 < target → row += 1（往下）\
   時間複雜度：最多走 m + n 步 O(m+n)
   
 * 程式
