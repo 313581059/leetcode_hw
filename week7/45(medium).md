@@ -1,5 +1,5 @@
 ### 45. Jump Game II 
-<img width="2869" height="1258" alt="image" src="https://github.com/user-attachments/assets/1d6bedd8-e548-41ef-b0af-cf71f6805c39" />
+<img width="2868" height="1273" alt="image" src="https://github.com/user-attachments/assets/bca9047c-47d4-4813-9c59-cf99c00191b5" />
 
 * 解題思路
   用 greedy 維護每一步能到的範圍，當走到邊界就增加一步，並更新下一步的最遠距離，時間複雜度 O(n)\
