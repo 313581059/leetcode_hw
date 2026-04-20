@@ -1,6 +1,6 @@
 ### 218. The Skyline Problem 
 <img width="2857" height="1266" alt="image" src="https://github.com/user-attachments/assets/3f9ca531-8972-44e0-b58e-b9abc29c63dd" />
-* 解題思路 \
+* 解題思路 
   建立建築物開始、建築物結束、heap\
   按照x軸順序排列，觀察y軸如果有變化 就更新heap，\
   並且有一個指標記錄前一個y 一個指標紀錄現在的y\
