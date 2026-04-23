@@ -1,6 +1,8 @@
 ### 154. Find Minimum in Rotated Sorted Array II
 
 <img width="2876" height="1280" alt="image" src="https://github.com/user-attachments/assets/6a51daee-d714-4265-8e56-46df6ee208f5" />
+
+
 * 解題思路 \
     使用binary search 因為每次砍一半可以節省時間複雜度，\
     透過比較mid和right來判斷最小值的位置：\
