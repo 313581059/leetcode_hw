@@ -34,8 +34,3 @@ class Solution(object):
         """
         x = random.randint(0, self.bound - 1)
         return self.map.get(x, x)        
-
-
-# Your Solution object will be instantiated and called as such:
-# obj = Solution(n, blacklist)
-# param_1 = obj.pick()
