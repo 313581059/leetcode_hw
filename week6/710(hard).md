@@ -1,7 +1,9 @@
 ### 710. Random Pick with Blacklist
 
 <img width="2862" height="1271" alt="image" src="https://github.com/user-attachments/assets/d44994d6-e8ad-427c-b628-d998d492d101" />
+
 *解題思路\
+
 *程式
 ```python
 import random
