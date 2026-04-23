@@ -3,8 +3,15 @@
 <img width="2862" height="1271" alt="image" src="https://github.com/user-attachments/assets/d44994d6-e8ad-427c-b628-d998d492d101" />
 
 
-* 解題思路\
+* 解題思路
 
+1. init函式用來建立mapping\
+首先設定bound 長度n-長度blacklist，只有[0,bound)內的不合法值要找替身\
+再來寫一個for迴圈 由尾端向前掃，跳過blacklist的值\
+製作不合法blacklist值 適合的替身對照表
+
+2. pick函式\
+x random抽取，遇到不合法值，查表後return；遇到合法的值，直接return。
 
 * 程式
 ```python
