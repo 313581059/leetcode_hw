@@ -9,6 +9,8 @@
     else 代表mid=right， 因為無法判斷 保守做right-1(線性掃描) 反正right不是唯一最小 最小至少還有mid扛\
     反覆while left< right 做到left==right就會停止(不可能做到>)\
     return left位置的nums數值
+
+  
 * 程式
 ```python
 class Solution(object):
