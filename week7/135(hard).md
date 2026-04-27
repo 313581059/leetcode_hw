@@ -1,6 +1,7 @@
 ### 135. Candy
 
 <img width="2866" height="1277" alt="image" src="https://github.com/user-attachments/assets/9a1cde64-6ccf-49d8-98ea-3cc20e810bb4" />
+
 * 解題思路\
   這個函式輸入是一個 ratings 陣列，代表每個小孩的評分。\
   先取得總共有幾個小孩。\
